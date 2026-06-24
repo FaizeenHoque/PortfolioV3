@@ -5,20 +5,37 @@
 @plugin '@tailwindcss/typography';
 
 @theme {
-    --color-bg-primary: #0A0A0A;
-    --color-bg-card: #1A1A1A;
-    --color-accent-red: #C8102E;
-    --color-accent-deep-red: #6B0000;
-    --color-text-primary: #F0F0F0;
-    --color-text-muted: #A0A0A0;
+  --color-black: #080808;
+  --color-black-2: #0f0f0f;
+  --color-card: #141414;
+  --color-card-2: #1a1a1a;
 
-    --font-display: "Bebas Neue", sans-serif;
-    --font-body: "Inter", sans-serif;
+  --color-red: #C8102E;
+  --color-red-dim: rgba(200, 16, 46, 0.18);
+  --color-red-glow: rgba(200, 16, 46, 0.3);
 
-    --shadow-red: 0 0 20px rgba(200,16,46,0.35);
-    --radius-card: 10px;
+  --color-white: #EFEFEF;
+  --color-grey: #777;
+  --color-grey-2: #444;
+
+  --border-default: rgba(255, 255, 255, 0.06);
+  --border-red: rgba(200, 16, 46, 0.25);
+
+  --font-mono: "JetBrains Mono", monospace;
+  --font-display: "Bebas Neue", sans-serif;
+  --font-body: "Inter", sans-serif;
 }
 
+html { scroll-behavior: smooth; }
+ 
 body {
-    /* background-color: var(--color-bg-primary); */
+    background: var(--color-black);
+    color: var(--color-white);
+    font-family: 'Inter', sans-serif;
+    overflow-x: hidden;
+}
+
+body::after {
+    content:''; position:fixed; inset:0; pointer-events:none; z-index:999;
+    background: repeating-linear-gradient(0deg, rgba(0,0,0,0.03) 0px, rgba(0,0,0,0.03) 1px, transparent 1px, transparent 3px);
 }

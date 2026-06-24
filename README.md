@@ -1,42 +1,76 @@
-# sv
+# fynr1x.dev
 
-Everything you need to build a Svelte project, powered by [`sv`](https://github.com/sveltejs/cli).
+> Personal portfolio of **Faizeen Hoque** — software engineer, hardware developer, and PCB designer based in 🇧🇩 Dhaka, Bangladesh.
 
-## Creating a project
+&nbsp;
 
-If you're seeing this, you've probably already done this step. Congrats!
+## Stack
 
-```sh
-# create a new project
-npx sv create my-app
-```
+| Layer | Tech |
+|---|---|
+| Framework | [SvelteKit](https://kit.svelte.dev/) |
+| Styling | [Tailwind CSS v4](https://tailwindcss.com/) |
+| Language | TypeScript |
+| Fonts | Bebas Neue · Inter · JetBrains Mono |
 
-To recreate this project with the same configuration:
+&nbsp;
 
-```sh
-# recreate this project
-npx sv@0.16.1 create --template minimal --types ts --add prettier tailwindcss="plugins:typography,forms" --install npm .
-```
+## Features
 
-## Developing
+- Minimal black & red design with PCB-inspired hero background
+- Fully responsive — mobile hamburger menu, fluid type scaling
+- Custom translucent navbar with scroll-aware border
+- Projects section linking to real GitHub repos
+- Find Me section — Discord, Email, GitHub
+- Scanline noise overlay + Bebas Neue display typography
 
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
+&nbsp;
 
-```sh
+## Projects Showcased
+
+| ID | Project | Stack |
+|---|---|---|
+| 01 | [FlintLauncher](https://github.com/FaizeenHoque/FlintLauncher) | Tauri · Svelte |
+| 02 | [HyprboardV2](https://github.com/FaizeenHoque/HyprboardV2) | KiCad · RP2040 |
+| 03 | [CELLA-1M9E1D0B0UMX](https://github.com/FaizeenHoque/CELLA-1M9E1D0B0UMX) | KiCad · RP2040 · KMK |
+
+&nbsp;
+
+## Getting Started
+
+```bash
+# Clone the repo
+git clone https://github.com/FaizeenHoque/fynr1x.dev.git
+cd fynr1x.dev
+
+# Install dependencies
+npm install
+
+# Start dev server
 npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
 ```
 
-## Building
+Open [http://localhost:5173](http://localhost:5173) in your browser.
 
-To create a production version of your app:
+&nbsp;
 
-```sh
+## Build
+
+```bash
 npm run build
+npm run preview
 ```
 
-You can preview the production build with `npm run preview`.
+&nbsp;
 
-> To deploy your app, you may need to install an [adapter](https://svelte.dev/docs/kit/adapters) for your target environment.
+## Contact
+
+- **Discord** — `fynr1x.`
+- **Email** — [haquefaizeen11@gmail.com](mailto:haquefaizeen11@gmail.com)
+- **GitHub** — [@FaizeenHoque](https://github.com/FaizeenHoque)
+
+&nbsp;
+
+---
+
+<p align="center">Built from scratch. No templates.</p>
